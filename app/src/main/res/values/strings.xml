@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Travellia</string>
+    <string name="splash_text">Travellia</string>
+    <string name="welcome_text">Hello World</string>
+    <string name="textview_one">Tips</string>
+    <string name="textview_two">Berwisata Disaat Pandemi</string>
+    <string name="textview_three">Tetap patuhi protokol kesehatan Covid 19 saat anda berwisata.\nDengan menjaga jarak, memakai masker dengan benar,selalu cuci tangan dengan air yang mengalir dan sabun</string>
+    <string name="textview_four">Stay Safe, Stay Healthy!</string>
+    <string name="txt_button_one">Mulai Sekarang</string>
+    <string name="txt_button_two">Tentang Aplikasi</string>
+    <string name="destination_name">Nama Destinasi</string>
+    <string name="detail">Detail Destinasi</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".WelcomeScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-18dp"
+        android:layout_marginBottom="350dp"
+        app:cardCornerRadius="27dp">
+
+        <ImageView
+            android:id="@+id/welcome_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mountain" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcome_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="400dp"
+        android:text="@string/textview_one"
+        android:textColor="@android:color/black"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/welcome_tv_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="435dp"
+        android:text="@string/textview_two"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/welcome_tv_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="470dp"
+        android:textColor="@android:color/black"
+        android:text="@string/textview_three"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:id="@+id/welcome_tv_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="585dp"
+        android:textColor="@android:color/black"
+        android:text="@string/textview_four"
+        android:textStyle="bold"
+        android:textSize="19sp"/>
+
+    <Button
+        android:id="@+id/welcome_button_one"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="620dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/txt_button_one"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+   <Button
+       android:id="@+id/welcome_button_two"
+        android:layout_width="226dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="670dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/txt_button_two"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+</RelativeLayout>
