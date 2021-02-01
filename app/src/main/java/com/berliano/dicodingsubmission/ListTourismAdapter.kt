@@ -1,5 +1,6 @@
 package com.berliano.dicodingsubmission
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -37,7 +38,15 @@ class ListTourismAdapter(private val listTourism: ArrayList<Tourism>) : Recycler
         holder.tvName.text = tourism.name
         holder.tvDetail.text = tourism.detail
 
-        holder.itemView.setOnClickListener{onItemClickCallback.onItemClicked(listTourism[holder.adapterPosition])}
+        val tContex = holder.itemView.context
+
+        holder.itemView.setOnClickListener{
+            val moveToDetail = Intent(tContex, TourismDetail::class.java)
+            moveToDetail.putExtra(TourismDetail.EXTRA_NAME, tourism.name)
+            moveToDetail.putExtra(TourismDetail.EXTRA_IMAGE, tourism.photo)
+            moveToDetail.putExtra(TourismDetail.EXTRA_DETAIL, tourism.detail)
+            tContex.startActivity(moveToDetail)
+        }
     }
 
     override fun getItemCount(): Int {
