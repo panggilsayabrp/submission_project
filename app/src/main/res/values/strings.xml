@@ -10,4 +10,6 @@
     <string name="txt_button_two">Tentang Aplikasi</string>
     <string name="destination_name">Nama Destinasi</string>
     <string name="detail">Detail Destinasi</string>
+    <string name="about_name">Nama : Berliano Ridho Pratama</string>
+    <string name="about_email">Email : Mastama17@outlook.com</string>
 </resources>

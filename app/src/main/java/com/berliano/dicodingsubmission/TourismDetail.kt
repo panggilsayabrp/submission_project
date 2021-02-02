@@ -24,10 +24,12 @@ class TourismDetail : AppCompatActivity() {
         val tvDetailDetails : TextView = findViewById(R.id.tv_item_detail)
 
         val tName = intent.getStringExtra(EXTRA_NAME)
-        val tImage = intent.getStringExtra(EXTRA_IMAGE)
+        val tImage = intent.getIntExtra(EXTRA_IMAGE, 0)
         val tDetail = intent.getStringExtra(EXTRA_DETAIL)
 
         tvDetailName.text = tName
+
+
         Glide.with(this)
             .load(tImage)
             .apply(RequestOptions())
